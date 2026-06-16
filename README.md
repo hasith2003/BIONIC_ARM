@@ -13,7 +13,8 @@ The control pipeline is split across two core processing units over a high-speed
 * **Tasks:**
     * Ingests raw surface Electromyography (sEMG) data streams.
     * Executes real-time feature extraction (Time Domain, Frequency Domain features).
-    * Runs a lightweight, hardware-optimized Deep Learning inference pipeline (CNN/LSTM) to classify and predict multi-gesture user intent.
+    * Runs a lightweight, hardware-optimized Deep Learning inference pipeline to predict **10 different types of hand gestures**.
+    * Implements a Subject-Dependent (SD) classification model architecture (`SD_CNN_LSTM_ATT.ipynb`) consisting of a Convolutional Neural Network (CNN) followed by a Bidirectional Long Short-Term Memory (BiLSTM) network with an Attention mechanism, currently attaining an inference accuracy of **over 46%**.
     * Computes geometric Inverse Kinematics (IK) algorithms, converting spatial coordinate targets into precise target joint angle arrays.
 
 ### 2. Low-Level Actuation Node (ESP32-S3)
