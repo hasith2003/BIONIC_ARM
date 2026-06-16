@@ -15,6 +15,7 @@ The control pipeline is split across two core processing units over a high-speed
     * Executes real-time feature extraction (Time Domain, Frequency Domain features).
     * Runs a lightweight, hardware-optimized Deep Learning inference pipeline to predict **10 different types of hand gestures**.
     * Implements a Subject-Dependent (SD) classification model architecture (`SD_CNN_LSTM_ATT.ipynb`) consisting of a Convolutional Neural Network (CNN) followed by a Bidirectional Long Short-Term Memory (BiLSTM) network with an Attention mechanism, currently attaining an inference accuracy of **over 46%**.
+    * Serves as the development baseline for ongoing optimization, with the ultimate objective of scaling the current pipeline to achieve a robust, generalized **Subject-Independent (SI) classification model**.
     * Computes geometric Inverse Kinematics (IK) algorithms, converting spatial coordinate targets into precise target joint angle arrays.
 
 ### 2. Low-Level Actuation Node (ESP32-S3)
@@ -25,4 +26,3 @@ The control pipeline is split across two core processing units over a high-speed
     * Generates real-time smooth motion control profiles (e.g., trapezoidal or S-curve velocity profiling) to interpolate transitions between target positions seamlessly.
     * Generates precise multi-channel PWM outputs for multi-DOF finger and thumb actuators.
     * Monitors continuous feedback loops (current sensing, thermal thresholds, and limit switches) to ensure mechanical and user safety.
-
