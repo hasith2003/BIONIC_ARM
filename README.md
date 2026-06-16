@@ -26,4 +26,3 @@ The control pipeline is split across two core processing units over a high-speed
     * Generates precise multi-channel PWM outputs for multi-DOF finger and thumb actuators.
     * Monitors continuous feedback loops (current sensing, thermal thresholds, and limit switches) to ensure mechanical and user safety.
 
-<img width="918" height="790" alt="output" src="https://github.com/user-attachments/assets/1d398fc2-ad7d-4586-8c5c-3c5015b6c5c1" />
