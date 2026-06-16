@@ -12,6 +12,7 @@
 !*.ipynb
 
 # 4. Whitelist the entire Firmware folder and all its contents
+!Firmware/
 !Firmware/**
 
 # 5. Whitelist all image assets (.jpg, .jpeg, .png)
