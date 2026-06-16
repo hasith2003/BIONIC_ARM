@@ -1,5 +1,5 @@
 # ==============================================================================
-# GITIGNORE FOR HIGH-FIDELITY BIONIC ARM sEMG DATASET
+# GITIGNORE FOR HIGH-FIDELITY BIONIC ARM PROJECT
 # ==============================================================================
 
 # 1. Ignore everything by default
@@ -8,14 +8,20 @@
 # 2. Allow Git to look inside directory structures (CRITICAL for subfolders)
 !*/
 
-# 3. Whitelist all Jupyter Notebook files anywhere in the directory tree
+# 3. Whitelist all Jupyter Notebook files across the repo
 !*.ipynb
 
-# 4. Whitelist Project Documentation and Assets
-!README.md
+# 4. Whitelist the entire Firmware folder and all its contents
+!Firmware/**
+
+# 5. Whitelist all image assets (.jpg, .jpeg, .png)
 !*.jpg
+!*.jpeg
 !*.png
+
+# 6. Whitelist other documentation files
+!README.md
 !survey_responses.xlsx
 
-# 5. Track the .gitignore file itself
+# 7. Track the .gitignore file itself
 !.gitignore
