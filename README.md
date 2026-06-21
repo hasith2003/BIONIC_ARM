@@ -21,8 +21,9 @@ Subject-Dependent (Intra-Subject): Attains an inference accuracy of over 91% whe
 Subject-Dependent (Inter-Subject): Attains an inference accuracy of over 54% when evaluated on mixed-population datasets across the entire cohort.(Subject_Dependant_Inter_Subject\global_normalize.ipynb)
 
 (Uses the dataset https://www.kaggle.com/datasets/python16/multi-channel-semg-hand-gesture-signal-dataset)
-    * Serves as the development baseline for ongoing optimization, with the ultimate objective of scaling the current pipeline to achieve a robust, generalized **Subject-Independent (SI) classification model**.
-    * Computes geometric Inverse Kinematics (IK) algorithms, converting spatial coordinate targets into precise target joint angle arrays.
+
+* Serves as the development baseline for ongoing optimization, with the ultimate objective of scaling the current pipeline to achieve a robust, generalized **Subject-Independent (SI) classification model**.
+* Computes geometric Inverse Kinematics (IK) algorithms, converting spatial coordinate targets into precise target joint angle arrays.
 
 
 ### 2. Low-Level Actuation Node (ESP32-S3)
