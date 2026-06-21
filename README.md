@@ -14,9 +14,16 @@ The control pipeline is split across two core processing units over a high-speed
     * Ingests raw surface Electromyography (sEMG) data streams.
     * Executes real-time feature extraction (Time Domain, Frequency Domain features).
     * Runs a lightweight, hardware-optimized Deep Learning inference pipeline to predict **10 different types of hand gestures**.
-    * Implements a Subject-Dependent (SD) classification model architecture (`SD_CNN_LSTM_ATT.ipynb`) consisting of a Convolutional Neural Network (CNN) followed by a Bidirectional Long Short-Term Memory (BiLSTM) network with an Attention mechanism, currently attaining an inference accuracy of **over 55%**. (Uses the dataset https://www.kaggle.com/datasets/python16/multi-channel-semg-hand-gesture-signal-dataset)
+    *Implements a Subject-Dependent (SD) classification pipeline consisting of a Convolutional Neural Network (CNN) followed by a Bidirectional Long Short-Term Memory (BiLSTM) network with an Attention mechanism, achieving the following performance metrics across distinct evaluation paradigms:
+
+Subject-Dependent (Intra-Subject): Attains an inference accuracy of over 91% when trained and evaluated on isolated, individual user data profiles.(Subject_Dependant_Intra_Subject\single.ipynb)
+
+Subject-Dependent (Inter-Subject): Attains an inference accuracy of over 54% when evaluated on mixed-population datasets across the entire cohort.(Subject_Dependant_Inter_Subject\global_normalize.ipynb)
+
+(Uses the dataset https://www.kaggle.com/datasets/python16/multi-channel-semg-hand-gesture-signal-dataset)
     * Serves as the development baseline for ongoing optimization, with the ultimate objective of scaling the current pipeline to achieve a robust, generalized **Subject-Independent (SI) classification model**.
     * Computes geometric Inverse Kinematics (IK) algorithms, converting spatial coordinate targets into precise target joint angle arrays.
+
 
 ### 2. Low-Level Actuation Node (ESP32-S3)
 * **Role:** Real-time hardware abstraction, safety monitoring, and motor control.
