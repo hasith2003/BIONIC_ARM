@@ -8,8 +8,9 @@
 # 2. Allow Git to look inside directory structures (CRITICAL for subfolders)
 !*/
 
-# 3. Whitelist all Jupyter Notebook files across the repo
+# 3. Whitelist all Jupyter Notebook and Python files across the repo
 !*.ipynb
+!*.py
 
 # 4. Whitelist the entire Firmware folder and all its contents
 !Firmware/
