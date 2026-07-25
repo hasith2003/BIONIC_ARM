@@ -21,6 +21,11 @@ The control pipeline is split across two core processing units over a high-speed
     * Serves as the development baseline for ongoing optimization, with the ultimate objective of scaling the current pipeline to achieve a robust, generalized **Subject-Independent (SI) classification model**.
     * Computes geometric Inverse Kinematics (IK) algorithms, converting spatial coordinate targets into precise target joint angle arrays.
 
+### 📊 Gesture Recognition Performance (Intra-Subject)
+Below is the Confusion Matrix of the Subject-Dependent (Intra-Subject) model trained on [single.ipynb](file:///d:/EMG/EMG_Large/sEMG-dataset/Subject_Dependant_Intra_Subject/single.ipynb) and evaluated on the target user's test set:
+
+![Intra-Subject Confusion Matrix](Images/single_confusion_matrix.png)
+
 ### 2. Low-Level Actuation Node (STM32H743VIT6)
 * **Role:** Real-time hardware abstraction, safety monitoring, and motor control.
 * **Tasks:**
