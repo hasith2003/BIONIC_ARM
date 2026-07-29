@@ -16,6 +16,10 @@
 !Firmware/
 !Firmware/**
 
+# Whitelist the entire Current_ESP_testing folder and all its contents
+!Current_ESP_testing/
+!Current_ESP_testing/**
+
 # 5. Whitelist all image assets (.jpg, .jpeg, .png)
 !*.jpg
 !*.jpeg
